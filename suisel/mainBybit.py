@@ -2,7 +2,7 @@ import random
 
 import ccxt
 from loguru import logger
-import random
+
 
 
 bybit = ccxt.bybit({
