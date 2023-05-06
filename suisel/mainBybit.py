@@ -20,7 +20,7 @@ def main():
 
         for wallet in wallets:
             try:
-                amount = random.randint(1,5)   #от скольки до скольки максимум бнб выводить
+                amount = random.uniform(1,5)   #от скольки до скольки максимум бнб выводить
                 withdraw = bybit.withdraw('bnb',amount,wallet, params={"network": 'BSC'})
                 logger.info(f'{withdraw}')
             except Exception as e:
