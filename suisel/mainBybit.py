@@ -2,7 +2,7 @@ import random
 
 import ccxt
 from loguru import logger
-
+import time
 
 
 bybit = ccxt.bybit({
@@ -25,7 +25,7 @@ def main():
                 logger.info(f'{withdraw}')
             except Exception as e:
                 logger.error(f'{e}')
-
+             time.sleep(10)
 
 if __name__ == "__main__":
     main()
